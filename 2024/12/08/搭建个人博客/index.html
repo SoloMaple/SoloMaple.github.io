@@ -1,0 +1,269 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Hexo | Hexo</title><meta name="author" content="DZF"><meta name="copyright" content="DZF"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="【经验】【随想】搭建个人博客0.前言——一些啰嗦的随想现在是2024年12月7日凌晨0点21分，我正坐在机电楼806实验室的工位上，准备继续搭建自己的个人博客。 说是“继续”搭建，其实之前除了部署了一个模板网页，也没做什么。虽然很早就想做这件事，但总是忙于别的事。其实很多时候也不忙，但那些时候我又是单纯的懒。 点的奶茶送到了，先去取外卖了。一会接着写。  （大约十分钟后） 回到工位了。想到博客应该">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://solomaple.github.io/2024/12/08/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="【经验】【随想】搭建个人博客0.前言——一些啰嗦的随想现在是2024年12月7日凌晨0点21分，我正坐在机电楼806实验室的工位上，准备继续搭建自己的个人博客。 说是“继续”搭建，其实之前除了部署了一个模板网页，也没做什么。虽然很早就想做这件事，但总是忙于别的事。其实很多时候也不忙，但那些时候我又是单纯的懒。 点的奶茶送到了，先去取外卖了。一会接着写。  （大约十分钟后） 回到工位了。想到博客应该">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
+<meta property="article:published_time" content="2024-12-07T18:56:23.151Z">
+<meta property="article:modified_time" content="2024-12-07T18:55:45.597Z">
+<meta property="article:author" content="DZF">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="../../../../img/favicon.png"><link rel="canonical" href="http://solomaple.github.io/2024/12/08/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="../../../../css/index.css?v=4.13.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.1/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Hexo',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-12-08 02:55:45'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="../../../../archives/"><div class="headline">文章</div><div class="length-num">1</div></a><a href="../../../../tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="../../../../categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr class="custom-hr"/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a href="../../../../index.html" title="Hexo"><span class="site-name">Hexo</span></a></span><div id="menus"><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">无题</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-12-07T18:56:23.151Z" title="发表于 2024-12-08 02:56:23">2024-12-08</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-12-07T18:55:45.597Z" title="更新于 2024-12-08 02:55:45">2024-12-08</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="【经验】【随想】搭建个人博客"><a href="#【经验】【随想】搭建个人博客" class="headerlink" title="【经验】【随想】搭建个人博客"></a>【经验】【随想】搭建个人博客</h1><h2 id="0-前言——一些啰嗦的随想"><a href="#0-前言——一些啰嗦的随想" class="headerlink" title="0.前言——一些啰嗦的随想"></a>0.前言——一些啰嗦的随想</h2><p>现在是2024年12月7日凌晨0点21分，我正坐在机电楼806实验室的工位上，准备继续搭建自己的个人博客。</p>
+<p>说是“继续”搭建，其实之前除了部署了一个模板网页，也没做什么。虽然很早就想做这件事，但总是忙于别的事。<del>其实很多时候也不忙，但那些时候我又是单纯的懒。</del></p>
+<p>点的奶茶送到了，先去取外卖了。一会接着写。 </p>
+<p><em>（大约十分钟后）</em></p>
+<p>回到工位了。想到博客应该加点配图，遂给奶茶拍了张照。</p>
+<img src="pic/1-1.jpg" style="zoom: 12%;" />
+
+<p>奶茶的颜色比我想的要深，我看奶茶名字还以为会是粉色的。不过比起粉色还是这样的颜色更让人有食欲。</p>
+<p>后面的保温杯里泡的是前段时间买的金银花菊花决明子牛蒡茶。但显然我更喜欢喝奶茶，就算它又贵（对我来说）又不健康（老生常谈），但它好喝，这就抵得上很多了。 </p>
+<p>现在应该开工了，但我想先写点随想。虽然这应该是篇经验贴，写太多随想会弄得很罗嗦。但这是我自己的博客，我爱咋写咋写。</p>
+<p>耳机在播放网易云随机推荐的歌，现在这首叫《Young And Beautiful》，是《了不起的盖茨比》的配乐。我没看过这部电影，虽然我看过它的解读文章（在豆瓣和知乎上）、看过它的解说视频（“老X侃电影”那种解说），但我没看过它的电影原作。也许等到什么时候心血来潮会看吧。</p>
+<p>突然想到第一次知道这部电影，是在江南的某本书里。应该是《龙族》的某一部？说起来我以前是真喜欢龙族啊。你能想到一个天天看《斗破苍穹》、《斗罗大陆》、《吞噬星空》的小孩第一次看龙族时的震撼吗？其他的网文小说还在平铺直叙的时候，江南的描写却给我一种像在电影院看电影一样的身临其境的感觉，关键是这电影还帅得没边。当时还是先看了一部分第二部，就好像天天吃辣条的小孩突然有一天尝到了德芙。之后很快把一到三部都看完了，看完后又反反复复看了好多遍。那时真觉得楚子航是这个世界最帅的男人吧，同时也觉得江南的文笔真是天下无匹。语文课上天天赏析的世界名著？无聊、枯燥、老套、看了想睡觉，感觉都不如一场雨落狂流之暗或是一次迎着阳光盛大逃亡。</p>
+<p>成为一个没那么二次元的二次元，一部分也是因为龙族这小说。很早以前，除了名侦探柯南、蜡笔小新、龙珠这类动漫，我也没怎么看过其他能称为“二次元”的作品。后来好像是在乐视视频？不知道怎么就点进一部叫作《人形电脑天使心》的动漫。这动漫也挺老的了，也不知道它评价怎么样，起码当时给我感动得不行。后面也没看其他动漫。再后来看了龙族，里面提到凉宫春日。出于好奇我就去看了——真好看吧！当时直接一口气把全系列都看了（除了漫无止境的夏日那块被我给跳过了）。当时真喜欢长门有希啊，也真喜欢朝比奈学姐。不过我当时不怎么喜欢凉宫春日，她老欺负人，也过于任性了（起码当时是这么想的，现在剧情也忘得七七八八了）。这以后就接着看了好多动漫——刀剑神域（我简直是男主）、约会大作战（我为什么不是男主）、未闻花名（哭得最惨的一次，不过后面被朝花夕誓抢走了这一荣誉）、叛逆的鲁鲁修（我不如男主）……</p>
+<p>奶茶味道很一般，不是很推荐大家买这款。</p>
+<p>好了，该开工了。</p>
+<p><del>这时dmx和ckk突然说要走了，遂回宿舍。明天继续做吧。</del></p>
+<h2 id="1-照虎画猫——笨拙地模仿"><a href="#1-照虎画猫——笨拙地模仿" class="headerlink" title="1.照虎画猫——笨拙地模仿"></a>1.照虎画猫——笨拙地模仿</h2><p>我本人完全没有搭建博客方面的经验，遂上网找了一篇看着还不错的<a target="_blank" rel="noopener" href="https://www.cnblogs.com/coder-Jason/p/15821938.html">教程</a>作为参考资料。</p>
+<h3 id="开发工具"><a href="#开发工具" class="headerlink" title="开发工具"></a>开发工具</h3><p>依照教程，我选择<a target="_blank" rel="noopener" href="https://www.jetbrains.com/webstorm/">WebStorm</a>作为开发工具。据说这款IDE被称为誉为“Web前端开发神器”、“最强大的HTML5编辑器”、“最智能的JavaScript IDE”……不过我并没有什么Web前端开发的经验，说什么我都信。</p>
+<p>教程中也提到可以安装<a target="_blank" rel="noopener" href="https://code.visualstudio.com/">VSCode</a>作为IDE。感觉写代码的大伙电脑里基本都有这个？尤其是主要开发环境在Windows下的。不过鉴于WebStorm是全家桶，而VSCode还需要自己去配置，我还是选择WebStorm。</p>
+<p>至于写Markdown，我选择的是<a target="_blank" rel="noopener" href="https://typoraio.cn/">Typora</a>。正版收费，不过89元买断制也完全可以接受。其实直接在VSCode上装个Markdown插件就已经可以支持这个需求了。</p>
+<h3 id="框架"><a href="#框架" class="headerlink" title="框架"></a>框架</h3><p>我完全不打算从零开始写一个自己的网页，所以我打算使用已有的博客框架。</p>
+<blockquote>
+<p>博客框架通俗的说就是别人写好的一套源码，你拿过来会用就行，改一改自己的配置啊，配上想要的主题啊，这种就足够了（大佬请绕路）。</p>
+</blockquote>
+<h4 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h4><p><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/index.html">Hexo</a>是一个快速、简单且功能强大的博客框架。依据参考文章的推荐，加上我自己看了看觉得也挺不错的，我决定选择该框架。</p>
+<h4 id="WordPress"><a href="#WordPress" class="headerlink" title="WordPress"></a>WordPress</h4><p>文章中也提到<a target="_blank" rel="noopener" href="https://cn.wordpress.org/">WordPress</a>。虽然这个框架的功能也很强大，但使用它的前提是有一台服务器。我暂时没有租一台服务器的打算。</p>
+<h3 id="本地环境"><a href="#本地环境" class="headerlink" title="本地环境"></a>本地环境</h3><p>Hexo这样的框架只是原材料，而我们需要“工具”来处理使用材料。</p>
+<h4 id="git"><a href="#git" class="headerlink" title="git"></a>git</h4><p><a target="_blank" rel="noopener" href="https://git-scm.com/">git</a>相信大家都不陌生了，至少也有听说了解过。关于它的作用、安装教程和使用教程，网络上数不胜数。在此不做赘述。</p>
+<h4 id="node-js"><a href="#node-js" class="headerlink" title="node.js"></a>node.js</h4><p><a target="_blank" rel="noopener" href="https://nodejs.org/en/">Node.js</a>是一个开源的、跨平台的、基于JavaScript的运行时环境，主要用于构建高性能的服务器端和网络应用。它是由Ryan Dahl在2009年创建的，并基于Google的V8 JavaScript引擎运行。Node.js的出现使得开发者可以使用JavaScript不仅在浏览器端进行开发，还可以在服务器端构建高效的应用程序。</p>
+<p>老实说我不是很懂这些。但既然需要用到，就装上吧。</p>
+<p>其中有LTS（Long Term Support，长期支持）版和Current版（最新版）。我们选择LTS版。</p>
+<h3 id="Hexo-1"><a href="#Hexo-1" class="headerlink" title="Hexo"></a>Hexo</h3><h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><p>我们可以直接在桌面右键打开git bash，输入命令安装：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+
+<p>安装完成后，本地就已经有了Hexo环境。</p>
+<h4 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h4><p>在本地任意路径下新建一个文件夹，在其中打开git bash，输入命令初始化：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure>
+
+<p>可能会遇到些问题？有遇到可以试试参考<a target="_blank" rel="noopener" href="https://www.cnblogs.com/fairylyl/p/15059437.html">这篇文章</a>。我并未在此遇到问题。</p>
+<p>成功后该目录下文件和文件夹如下：</p>
+<img src="pic/1-2.png" style="zoom:50%;" />
+
+<p>Hexo大致文件结构：</p>
+<ul>
+<li>public：最终所见网页的所有内容</li>
+<li>node_modules：插件以及hexo所需node.js模块</li>
+<li>_config.yml：站点配置文件，设定一些公开信息等</li>
+<li>package.json：应用程序信息，配置hexo运行所需js包</li>
+<li>scaffolds：模板文件夹，新建文章，会默认包含对应模板内容</li>
+<li>themes：存放主题文件，hexo根据主题生成静态网页</li>
+<li>source：用于存放用户资源（除 <em>posts 文件夹，其余命名方式为 “</em> + 文件名”的文件被忽略）</li>
+</ul>
+<p>我们平时写的Markdown格式文章都在source&#x2F;_post下。</p>
+<p>现在，我们可以使用WebStorm打开该项目了。</p>
+<p>在WebStorm中打开终端，输入命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+
+<p>效果如下（此处已经设置了butterfly主题，输出与默认主题不太一样）：</p>
+<img src="pic/1-3.png" style="zoom:50%;" />
+
+<p>此时我们可以用浏览器访问本地的4000端口来预览我们的主页了。</p>
+<p>我们使用浏览器访问<a target="_blank" rel="noopener" href="http://127.0.0.1:4000/">127.0.0.1:4000</a>或<a target="_blank" rel="noopener" href="http://localhost:4000/">localhost:4000</a>即可。</p>
+<img src="pic/1-4.png" style="zoom: 25%;" />
+
+<p>至此，我们就得到了一个预制的毛坯房。</p>
+<h4 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h4><p>在该框架下，有相当多的主题可以挑选。就好像大伙都比较熟悉的手机的各种主题——图标、背景、字体等。</p>
+<p>我们可以在<a target="_blank" rel="noopener" href="https://hexo.io/themes/">官方主题库</a>中选择自己喜欢的主题。</p>
+<h4 id="应用"><a href="#应用" class="headerlink" title="应用"></a>应用</h4><p>我们在此以<em>Butterfly</em>主题为例</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> -b master https://gitee.com/immyw/hexo-theme-butterfly.git themes/butterfly</span><br></pre></td></tr></table></figure>
+
+<p>等待安装完成，themes文件夹下会显示butterfly主题的一些文件</p>
+<img src="pic/1-5.png" style="zoom:50%;" />
+
+<p>接着我们需要安装其所需的插件，即pug以及stylus的渲染器。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-renderer-pug hexo-renderer-stylus --save</span><br></pre></td></tr></table></figure>
+
+<p>安装完成后，我们需要修改网站配置文件，以使其使用该主题。我们在网站的根目录下找到_config.yml文件，修改主题为butterfly。</p>
+<img src="pic/1-6.png" style="zoom: 33%;" />
+
+<p>接着我们可以开始本地预览了：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g //生成博客目录</span><br><span class="line">hexo s //本地预览</span><br></pre></td></tr></table></figure>
+
+<p>此时我们的网页可能还略显简陋。大家可以在后续对其进行美化。</p>
+<h3 id="正式上线"><a href="#正式上线" class="headerlink" title="正式上线"></a>正式上线</h3><h4 id="图床"><a href="#图床" class="headerlink" title="图床"></a>图床</h4><p>加速图片加载用的。还没搞这个，先略过。</p>
+<h4 id="主题配置"><a href="#主题配置" class="headerlink" title="主题配置"></a>主题配置</h4><p>Butterfly主题的<a target="_blank" rel="noopener" href="https://butterfly.js.org/posts/4aa8abbe/">官方文档</a>附在此处。可以根据该文档进行设置。</p>
+<h4 id="Github-Pages配置"><a href="#Github-Pages配置" class="headerlink" title="Github Pages配置"></a>Github Pages配置</h4><p>GitHub Pages是一种由GitHub中的仓库&#x2F;项目直接创建的网页，管理简单。在本地编辑仓库中的内容，上传到GitHub上，GitHub Pages就能快速完成更新。而这一切都是完全免费的。</p>
+<p>我们在GitHub中新建仓库，</p>
+<img src="pic/1-7.png" style="zoom:25%;" />
+
+<p>接着，我们在仓库的设置中找到Pages</p>
+<img src="pic/1-8.png" style="zoom:25%;" />
+
+<p>记住仓库地址，我们会将本地的文件上传到仓库。</p>
+<p>如果你没有配置公钥，请先配置SSH公钥。可以直接搜索“GitHub SSH公钥”以查找教程。</p>
+<p>我们在WebStorm中链接到远程。添加仓库地址。</p>
+<img src="pic/1-9.png" style="zoom: 33%;" />
+
+<img src="pic/1-10.png" style="zoom:33%;" />
+
+<p>接着，我们修改网站部署设置。</p>
+<img src="pic/1-11.png" style="zoom:33%;" />
+
+<p>接着，我们在中端执行以下命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g //生成博客目录</span><br><span class="line">hexo s //本地预览，确认效果</span><br><span class="line">hexo d //部署项目</span><br></pre></td></tr></table></figure>
+
+<p>执行完毕后，就可以通过<strong>用户名.github.io</strong>访问我们的个人主页了。</p>
+<h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><p>你还可以为你的个人主页配置图床、租一台服务器，或是买一个域名。但我暂时并未有这些打算，该博客的经验记录也就到此结束了。</p>
+<h2 id="2-写在后面——人生总是这样"><a href="#2-写在后面——人生总是这样" class="headerlink" title="2.写在后面——人生总是这样"></a>2.写在后面——人生总是这样</h2><p>“人生总是这样”，这是我最近经常说的一句话。</p>
+<p>有时有人向我倾诉或者倾泻了一大堆话，接着等我的“读后感”，这时我我可能就会回复“人生总是这样”。</p>
+<p>其实我对“单方面向我输出一大堆话”这件事完全没有什么意见，我也挺喜欢看看这些的。但我的头脑转得并不够快，脑中所容纳的知识储备也不够多。所以在对方讲完之后，如果我的脑中没能生成出合适的答复（这概率并不低），而对方又在用沉默来期盼我的回应，我就会回一句“人生总是这样”。</p>
+<p>前面写了这么多，大抵是需要一片后记作总结的。</p>
+<p>但是啊，我写不出来。</p>
+<p>所以说啊，人生总是这样……</p>
+<p>2024-12-8-2-39</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="http://solomaple.github.io">DZF</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="http://solomaple.github.io/2024/12/08/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">http://solomaple.github.io/2024/12/08/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://solomaple.github.io" target="_blank">Hexo</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='../../../../img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">DZF</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="../../../../archives/"><div class="headline">文章</div><div class="length-num">1</div></a><a href="../../../../tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="../../../../categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E3%80%90%E7%BB%8F%E9%AA%8C%E3%80%91%E3%80%90%E9%9A%8F%E6%83%B3%E3%80%91%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2"><span class="toc-number">1.</span> <span class="toc-text">【经验】【随想】搭建个人博客</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#0-%E5%89%8D%E8%A8%80%E2%80%94%E2%80%94%E4%B8%80%E4%BA%9B%E5%95%B0%E5%97%A6%E7%9A%84%E9%9A%8F%E6%83%B3"><span class="toc-number">1.1.</span> <span class="toc-text">0.前言——一些啰嗦的随想</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E7%85%A7%E8%99%8E%E7%94%BB%E7%8C%AB%E2%80%94%E2%80%94%E7%AC%A8%E6%8B%99%E5%9C%B0%E6%A8%A1%E4%BB%BF"><span class="toc-number">1.2.</span> <span class="toc-text">1.照虎画猫——笨拙地模仿</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7"><span class="toc-number">1.2.1.</span> <span class="toc-text">开发工具</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A1%86%E6%9E%B6"><span class="toc-number">1.2.2.</span> <span class="toc-text">框架</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Hexo"><span class="toc-number">1.2.2.1.</span> <span class="toc-text">Hexo</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#WordPress"><span class="toc-number">1.2.2.2.</span> <span class="toc-text">WordPress</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9C%AC%E5%9C%B0%E7%8E%AF%E5%A2%83"><span class="toc-number">1.2.3.</span> <span class="toc-text">本地环境</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#git"><span class="toc-number">1.2.3.1.</span> <span class="toc-text">git</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#node-js"><span class="toc-number">1.2.3.2.</span> <span class="toc-text">node.js</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Hexo-1"><span class="toc-number">1.2.4.</span> <span class="toc-text">Hexo</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%89%E8%A3%85"><span class="toc-number">1.2.4.1.</span> <span class="toc-text">安装</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%88%9D%E5%A7%8B%E5%8C%96"><span class="toc-number">1.2.4.2.</span> <span class="toc-text">初始化</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%BB%E9%A2%98"><span class="toc-number">1.2.4.3.</span> <span class="toc-text">主题</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%BA%94%E7%94%A8"><span class="toc-number">1.2.4.4.</span> <span class="toc-text">应用</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%AD%A3%E5%BC%8F%E4%B8%8A%E7%BA%BF"><span class="toc-number">1.2.5.</span> <span class="toc-text">正式上线</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9B%BE%E5%BA%8A"><span class="toc-number">1.2.5.1.</span> <span class="toc-text">图床</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE"><span class="toc-number">1.2.5.2.</span> <span class="toc-text">主题配置</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Github-Pages%E9%85%8D%E7%BD%AE"><span class="toc-number">1.2.5.3.</span> <span class="toc-text">Github Pages配置</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B6%E4%BB%96"><span class="toc-number">1.2.6.</span> <span class="toc-text">其他</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E5%86%99%E5%9C%A8%E5%90%8E%E9%9D%A2%E2%80%94%E2%80%94%E4%BA%BA%E7%94%9F%E6%80%BB%E6%98%AF%E8%BF%99%E6%A0%B7"><span class="toc-number">1.3.</span> <span class="toc-text">2.写在后面——人生总是这样</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="" title="无题">无题</a><time datetime="2024-12-07T18:56:23.151Z" title="发表于 2024-12-08 02:56:23">2024-12-08</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By DZF</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="../../../../js/utils.js?v=4.13.0"></script><script src="../../../../js/main.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
