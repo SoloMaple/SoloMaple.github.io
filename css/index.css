@@ -2397,6 +2397,7 @@ figure.highlight pre .javascript .function {
   -ms-transform: translateZ(0);
   transform: translateZ(0);
 }
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
 #article-container .flink {
   margin-bottom: 20px;
 }
@@ -2494,6 +2495,7 @@ figure.highlight pre .javascript .function {
   height: 40px;
   font-weight: bold;
   font-size: 1.43em;
+  font-family: 'Great Vibes', cursive;
 }
 #article-container .flink .flink-item-desc {
   padding: 16px 10px 16px 0;
