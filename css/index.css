@@ -3083,7 +3083,7 @@ h1.page-title + .tag-cloud-list {
   animation: more-btn-move 1s infinite;
 }
 #aside-content .card-announcement .item-headline i {
-  color: #f00;
+  color: #f47883;
 }
 .avatar-img {
   overflow: hidden;
@@ -3484,13 +3484,6 @@ h1.page-title + .tag-cloud-list {
   -ms-transition: all 0.5s;
   transition: all 0.5s;
 }
-#page-header:not(.not-top-img):before {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: var(--mark-bg);
-  content: '';
-}
 #page-header.full_page {
   height: 100vh;
   background-attachment: fixed;
@@ -3512,6 +3505,7 @@ h1.page-title + .tag-cloud-list {
   margin: 0;
   color: var(--white);
   font-size: 1.85em;
+  text-shadow: 0px 0px 2rem #000;
 }
 @media screen and (min-width: 768px) {
   #page-header #site-title {
@@ -3519,8 +3513,9 @@ h1.page-title + .tag-cloud-list {
   }
 }
 #page-header #site-subtitle {
-  color: var(--light-grey);
+  color: var(--white);
   font-size: 1.15em;
+  text-shadow: 0px 0px 1.7rem #000;
 }
 @media screen and (min-width: 768px) {
   #page-header #site-subtitle {
@@ -3824,7 +3819,7 @@ h1.page-title + .tag-cloud-list {
   color: var(--white);
 }
 #nav .site-name {
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.15);
+  text-shadow: 2px 2px 2rem rgba(0,0,0,0.5);
   font-weight: bold;
 }
 #nav .menus_items {
@@ -3918,7 +3913,7 @@ h1.page-title + .tag-cloud-list {
 #nav .site-page {
   position: relative;
   padding-bottom: 6px;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+  text-shadow: 0rem 0rem 2em rgba(0,0,0,0.9);
   font-size: 0.78em;
   cursor: pointer;
 }
