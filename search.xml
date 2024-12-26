@@ -77,9 +77,9 @@
     
     
     <entry>
-      <title>我的朋友们</title>
-      <link href="/link/index.html"/>
-      <url>/link/index.html</url>
+      <title>标签索引</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -88,9 +88,9 @@
     
     
     <entry>
-      <title>标签索引</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
+      <title>我的朋友们</title>
+      <link href="/link/index.html"/>
+      <url>/link/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
